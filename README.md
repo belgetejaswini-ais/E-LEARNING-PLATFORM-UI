@@ -35,7 +35,7 @@ JavaScript plays a crucial role in making the platform **interactive and dynamic
 
 The progress tracking system increases completion percentage as lessons are completed, and once the progress reaches 100%, a certificate message is displayed. This simulates real-world e-learning platforms and improves user engagement.
 
-### 🎯 **Task Objective and Outcome**
+###🎯 **Task Objective and Outcome**
 
 The main task of this project is to design the **front-end UI of an E-Learning Platform** that includes course listing, progress tracking, and video embedding. The deliverable is a **fully styled and interactive multi-page interface** built only with front-end technologies.
 This project demonstrates practical understanding of **HTML for structure, CSS for design, and JavaScript for behavior**, making it suitable for **internships, mini projects, and academic submissions**.
