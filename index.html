@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2 class="logo">E-Learning</h2>
+    <input type="text" placeholder="Search courses..." onkeyup="searchCourse(this.value)">
+    <ul>
+        <li onclick="showPage('courses')">Courses</li>
+        <li onclick="showPage('dashboard')">Dashboard</li>
+        <li onclick="showPage('video')">Video</li>
+        <li onclick="toggleDark()">🌙</li>
+    </ul>
+</nav>
+
+<!-- LOGIN -->
+<div class="login-box" id="loginBox">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</div>
+
+<!-- COURSES -->
+<section id="courses" class="page active">
+    <h1>Courses</h1>
+
+    <div class="course-card">
+        <h3>HTML & CSS</h3>
+        <p>Web basics</p>
+        <button onclick="enroll()">Enroll</button>
+    </div>
+
+    <div class="course-card">
+        <h3>JavaScript</h3>
+        <p>Interactive websites</p>
+        <button onclick="enroll()">Enroll</button>
+    </div>
+
+    <div class="course-card">
+        <h3>Projects</h3>
+        <p>Real-world apps</p>
+        <button onclick="enroll()">Enroll</button>
+    </div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard" class="page">
+    <h1>My Progress</h1>
+
+    <div class="progress-bar">
+        <div id="progress"></div>
+    </div>
+
+    <button onclick="completeLesson()">Complete Lesson</button>
+    <p id="certificateMsg"></p>
+</section>
+
+<!-- VIDEO -->
+<section id="video" class="page">
+    <h1>Learning Video</h1>
+    <iframe src="https://www.youtube.com/embed/UB1O30fR-EE"
+        allowfullscreen></iframe>
+</section>
+
+<footer>
+    © 2026 E-Learning Platform | CODTECH Internship
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
