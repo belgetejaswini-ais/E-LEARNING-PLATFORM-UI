@@ -1,0 +1,43 @@
+let progress = 0;
+
+// navigation
+function showPage(id) {
+    document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+    document.getElementById(id).classList.add("active");
+}
+
+// login
+function login() {
+    document.getElementById("loginBox").style.display = "none";
+    alert("Login Successful");
+}
+
+// enroll
+function enroll() {
+    alert("Course Enrolled!");
+}
+
+// progress
+function completeLesson() {
+    if (progress < 100) {
+        progress += 25;
+        document.getElementById("progress").style.width = progress + "%";
+    }
+    if (progress === 100) {
+        document.getElementById("certificateMsg").innerText =
+            "🎉 Certificate Unlocked!";
+    }
+}
+
+// search
+function searchCourse(value) {
+    document.querySelectorAll(".course-card").forEach(card => {
+        card.style.display = card.innerText.toLowerCase().includes(value.toLowerCase())
+            ? "block" : "none";
+    });
+}
+
+// dark mode
+function toggleDark() {
+    document.body.classList.toggle("dark");
+}
